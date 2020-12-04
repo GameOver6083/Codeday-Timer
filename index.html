@@ -1,0 +1,48 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  text-align: center;
+  font-size: 75px;
+  margin-top: 0px;
+}
+h3 {
+	text-align: center;
+	font-size: 50px;
+	}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+</head>
+<body>
+<body style="background-color:powderblue;">
+	<h3>COUNTDOWN UNTIL CODEDAY STARTS:</h3>
+<p id="demo"></p>
+
+<script>
+var countDownDate = new Date("December 4, 2020 18:00:00").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "CONGRATULATIONS ON SURVIVING THE 2020-21 SCHOOL YEAR";
+  }
+}, 1000);
+</script>
+<img src="https://is4-ssl.mzstatic.com/image/thumb/Purple128/v4/3d/1e/e6/3d1ee630-b134-aa1d-daea-a935765b6c02/source/512x512bb.jpg" alt="Sad pepe" class="center">
+</body>
+</html>
