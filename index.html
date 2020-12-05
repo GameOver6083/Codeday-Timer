@@ -19,7 +19,7 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
 
   <div class="w3-panel">
-    <h1  class="center"><b>Countdown until CodeDay starts!</b></h1>
+    <h1  class="center"><b>Countdown until CodeDay ends!</b></h1>
   </div>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -45,7 +45,7 @@ h3 {
 <p id="demo"></p>
 
 <script>
-var countDownDate = new Date("December 4, 2020 18:00:00").getTime();
+var countDownDate = new Date("December 6, 2020 17:00:00").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -57,7 +57,7 @@ var x = setInterval(function() {
   + minutes + "m " + seconds + "s ";
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "CONGRATULATIONS, CODEDAY HAS STARTED! GOOD LUCK! Kickoff on Twitch: " + "CodeDay KickOff!".link("twitch.tv/codeday_org");
+    document.getElementById("demo").innerHTML = "AAH, CodeDay finished!");
   }
 }, 1000);
 </script>
